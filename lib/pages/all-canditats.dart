@@ -12,7 +12,7 @@ class FriendListPage extends StatefulWidget {
 
 class _FriendListPageState extends State<FriendListPage> {
   String name = "";
-  bool liked = false;
+ // bool liked = false;
   List<Person> persons = [];
   List<Person> friends = [];
 
