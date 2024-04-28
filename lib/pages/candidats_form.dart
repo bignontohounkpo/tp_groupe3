@@ -3,9 +3,7 @@ import 'dart:convert';
 import 'package:candidature/common/IButton.dart';
 import 'package:candidature/common/IIinput.dart';
 import 'package:candidature/models/person.dart';
-import 'package:candidature/pages/http.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 
 
 
@@ -100,7 +98,6 @@ iinputType: TextInputType.name,
           onPressed: () {
           if(  _formKey.currentState!.validate()){
             _formKey.currentState!.save();
-            sendDataToServer(person);
            Navigator.pop(context, person);
           }
           },
